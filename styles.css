@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+img{
+    border-radius: 50%;
+    position: relative;
+}
+
+.content{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+header{
+    background: url(image/home.jfif);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+
+.nav-area{
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+} 
+
+.nav-area .content{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-area .logo a{
+    color: crimson;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar li{
+    display: inline-block;
+    align-items: center;
+}
+
+.nav-area
+ .navbar li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+} 
+
+.navbar li a{
+    color: #111;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+.navbar li a:hover{
+    background: crimson;
+    color: #fff;
+}
+
+.navbar .content .logo a{
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.home {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.home .home-content{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.home .home-content .text2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 5px 0;
+}
+
+.home .home-content .text3 span{
+    color: crimson;
+    font-size: 40px;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #111;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    background: #fff;
+    color: crimson;
+}
