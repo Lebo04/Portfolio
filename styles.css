@@ -9,8 +9,32 @@ body{
     font-size: large;
 }
 
+.icons-bar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 95%;
+}
 
-img{
+.icons-bar a{
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: crimson;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.icons-bar a:hover{
+    background: #111;
+    color: #fff;
+}
+
+.home img{
     border-radius: 50%;
     position: relative;
     border-style: double;
@@ -166,9 +190,64 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.contact .title::after{
-    content: "get in touch";
+.about .about-content{
+    display: flex;
+}
+
+.about .about-content .left img{
+    border-radius: 50%;
+    border-style: double;
+    border-color: crimson;
+}
+
+.about .about-content .left{
+    width: 25%;
+    height: 100%;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.about .about-content .right{
+    float: inherit;
+    background: crimson;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 120px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right li{
+    list-style: none;
+}
+
+.about .about-content .right{
+    flex-wrap: right;
+    width: 40%;  
+    display: block;
+}
+
+.contact{
+    background: #111;
+    color: #fff;
+}
+
+.contact .title::before{
     background: #fff;
+    
+}
+
+.contact .row i{
+    color: crimson;
+    font-size: 25px;
+}
+
+.contact .contact-content{
+    display: flex;
 }
 
 .contact .text{
@@ -188,8 +267,8 @@ section .title::after{
     width: 40%;
     padding-left: 80px;
     padding-bottom: 20px;
-    padding-top: 20px;
-   
+    padding-top: 30px;
+    margin-left: 100px;
 }
 
 .contact .right form label{
