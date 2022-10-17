@@ -26,7 +26,7 @@ body{
     height: 30px;
     border-radius: 50%;
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .icons-bar a:hover{
@@ -190,6 +190,11 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+table tbody td{
+    border: 0px solid black;
+    text-align: left;
+}
+
 .about .about-content{
     display: flex;
 }
@@ -219,10 +224,6 @@ section .title::after{
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.about .about-content .right li{
-    list-style: none;
 }
 
 .about .about-content .right{
