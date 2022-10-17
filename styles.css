@@ -10,10 +10,12 @@ body{
 }
 
 .icons-bar{
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 95%;
+    right: 5%;
+    transform: translateY(30%);
+
 }
 
 .icons-bar a{
