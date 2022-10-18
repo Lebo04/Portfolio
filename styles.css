@@ -15,7 +15,6 @@ body{
     position: fixed;
     right: 5%;
     transform: translateY(30%);
-
 }
 
 .icons-bar a{
@@ -26,7 +25,7 @@ body{
     font-size: 25px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 50%; 
     margin-top: 20px;
     padding: 20px; 
 }
@@ -120,24 +119,24 @@ header{
     margin: auto 0 auto 40px;
 }
 
-.home .home-content .text1{
+.home .home-content .text{
     font-size: 35px;
     font-weight: 600;
 }
 
-.home .home-content .text2{
+.home .home-content .delay-1{
     font-size: 40px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.home .home-content .text3{
+.home .home-content .delay-2{
     font-size: 45px;
     font-weight: 600;
     margin-top: 5px 0;
 }
 
-.home .home-content .text3 span{
+.home .home-content .text span{
     color: crimson;
     font-size: 40px;
 }
@@ -190,7 +189,7 @@ section .title::after{
     color: crimson;
     background: #fff;
     transform: translateX(-50%);
-}
+} 
 
 table tbody td{
     border: 0px solid black;
@@ -218,7 +217,6 @@ table tbody td{
     transition: all 0.3s ease;
 }
 .about .about-content .right{
-    float: inherit;
     background: crimson;
     text-align: center;
     border-radius: 6px;
@@ -234,12 +232,13 @@ table tbody td{
     display: block;
 }
 
-.contact{
+.contact, .education{
     background: #111;
     color: #fff;
 }
 
-.contact .title::before{
+.contact .title::before,
+.education .title::before{
     background: #fff;
     
 }
@@ -312,3 +311,44 @@ input{
     background: none;
     color: #111;
 }
+
+.text {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+      
+  @keyframes animate-fade {
+      0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  .text.pop {
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  }
+  
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+          
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+  
+  
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+      
+  .delay-2 {
+    animation-delay: 0.7s;
+  }
+
+  
